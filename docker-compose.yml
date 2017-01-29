@@ -1,0 +1,23 @@
+mqtt:
+    image: matteocollina/mosca
+    ports:
+        - 1883:1883
+
+mqttbridge:
+    image: stjohnjohnson/smartthings-mqtt-bridge
+    volumes:
+        - ./mqtt-bridge:/config
+    ports:
+        - 8080:8080
+    links:
+        - mqtt
+
+homeassistant:
+    image: homeassistant/home-assistant:latest
+    ports:
+        - 80:80
+    volumes:
+        - ./homeassistant:/config
+        - /etc/localtime:/etc/localtime:ro
+    links:
+        - mqtt
