@@ -28,11 +28,4 @@ tts:
   platform: google
 
 mqtt:
-  embedded:
-    listeners:
-      default:
-        max-connections: 500
-        type: tcp
-        bind: 127.0.0.1:1888
-  broker: 127.0.0.1
-  port: 1888
+    broker: 10.0.0.30
