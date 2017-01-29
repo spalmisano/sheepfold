@@ -29,3 +29,12 @@ tts:
 
 mqtt:
     broker: 10.0.0.30
+
+switch:
+  platform: mqtt
+  name: "master closet"
+  state_topic: "smartthings/master closet/switch"
+  command_topic: "smartthings/master closet/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
