@@ -29,7 +29,7 @@ tts:
 
 mqtt:
     embedded:
-#    broker: localhost
+    broker: localhost
     port: 1883
 
 switch:
