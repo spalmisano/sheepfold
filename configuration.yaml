@@ -28,7 +28,8 @@ tts:
   platform: google
 
 mqtt:
-#    broker: 10.0.0.30
+    broker: localhost
+    port: 1883
 
 switch:
   platform: mqtt
