@@ -28,7 +28,7 @@ tts:
   platform: google
 
 mqtt:
-    broker: 10.0.0.30
+#    broker: 10.0.0.30
 
 switch:
   platform: mqtt
