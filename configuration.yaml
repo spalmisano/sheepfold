@@ -34,6 +34,15 @@ mqtt:
 
 #switch: !include switches.yaml
 
+light 1:
+  platform: mqtt
+  name: "master closet"
+  state_topic: "smartthings/master closet/switch"
+  command_topic: "smartthings/master closet/switch"
+  payload_on: "on"
+  payload_off: "off"
+  retain: true
+
 light:
   platform: mqtt
   name: "kitchen cabinets"
