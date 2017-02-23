@@ -32,6 +32,9 @@ mqtt:
     broker: localhost
     port: 1883
 
+device_tracker:
+  platform: locative
+
 #switch: !include switches.yaml
 
 light 1:
