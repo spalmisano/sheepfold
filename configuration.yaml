@@ -32,21 +32,5 @@ mqtt:
     broker: localhost
     port: 1883
 
-switch:
-  platform: mqtt
-  name: "master closet"
-  state_topic: "smartthings/master closet/switch"
-  command_topic: "smartthings/master closet/switch"
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
+switch: !include switches.yaml
 
-switch 1:
-  platform: mqtt
-  name: "kitchen cabinets"
-  state_topic: "smartthings/kitchen cabinets/switch"
-  command_topic: "smartthings/kitchen cabinets/switch"
-  payload_on: "on"
-  payload_off: "off"
-  retain: true
-  

@@ -1,0 +1,22 @@
+   - platform: mqtt
+     switches:
+        master_closet:
+          name: "master closet"
+          state_topic: "smartthings/master closet/switch"
+          command_topic: "smartthings/master closet/switch"
+          payload_on: "on"
+          payload_off: "off"
+          retain: true
+        kitchen_cabinets:
+            name: "kitchen cabinets"
+            state_topic: "smartthings/kitchen cabinets/switch"
+            command_topic: "smartthings/kitchen cabinets/switch"
+            payload_on: "on"
+            payload_off: "off"
+            retain: true
+
+
+
+
+  
+
