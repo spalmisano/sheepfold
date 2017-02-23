@@ -34,16 +34,16 @@ mqtt:
 
 #switch: !include switches.yaml
 light:
-  platform: mqtt
-    name: "kitchen cabinets"
-    state_topic: "smartthings/kitchen cabinets/switch"
-    command_topic: "smartthings/kitchen cabinets/switch"
-    brightness_state_topic: "smartthings/kitchen cabinets/level"
-    brightness_command_topic: "smartthings/kitchen cabinets/level"
-    brightness_scale: 99
-    #brightness_value_template: '{{ value }}'
-    qos: 0
-    payload_on: "on"
-    payload_off: "off"
-    optimistic: false
-    retain: true
+platform: mqtt
+  name: "kitchen cabinets"
+  state_topic: "smartthings/kitchen cabinets/switch"
+  command_topic: "smartthings/kitchen cabinets/switch"
+  brightness_state_topic: "smartthings/kitchen cabinets/level"
+  brightness_command_topic: "smartthings/kitchen cabinets/level"
+  brightness_scale: 99
+  brightness_value_template: '{{ value }}'
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+  optimistic: false
+  retain: true
