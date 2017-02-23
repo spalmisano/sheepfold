@@ -36,8 +36,8 @@ mqtt:
 light:
   - platform: mqtt
     name: "kitchen cabinets"
-    state_topic: "smartthings/master closet/switch"
-    command_topic: "smartthings/master closet/switch"
+    state_topic: "smartthings/kitchen cabinets/switch"
+    command_topic: "smartthings/kitchen cabinets/switch"
     payload_on: "on"
     payload_off: "off"
     retain: true
