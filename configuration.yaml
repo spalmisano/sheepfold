@@ -37,8 +37,8 @@ device_tracker:
 
 #switch: !include switches.yaml
 
-light 1:
-  platform: mqtt
+light:
+- platform: mqtt
   name: "master closet"
   state_topic: "smartthings/master closet/switch"
   command_topic: "smartthings/master closet/switch"
@@ -46,8 +46,7 @@ light 1:
   payload_off: "off"
   retain: true
 
-light:
-  platform: mqtt
+- platform: mqtt
   name: "kitchen cabinets"
   state_topic: "smartthings/kitchen cabinets/switch"
   command_topic: "smartthings/kitchen cabinets/switch"
